@@ -43,7 +43,7 @@
 						<div class="form-group col-lg-6">
 							<label for="birth">생년월일</label>
 							<input id="memberBirth" name="memberBirth" type="text" 
-								   th:value="${getEmployeeList.memberBirth}" class="form-control validate" required="required"/>
+								   th:value="${getEmployeeList.memberBirth}" class="form-control validate" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" required="required"/>
 						</div>
 						<div class="form-group col-lg-6">
 							<label for="address">주소</label>
@@ -58,7 +58,7 @@
 						<div class="form-group col-lg-6">
 							<label for="phone">전화번호</label>
 							<input id="memberPhone" name="memberPhone" type="text" 
-								   th:value="${getEmployeeList.memberPhone}" class="form-control validate" required="required"/>
+								   th:value="${getEmployeeList.memberPhone}" class="form-control validate" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" required="required"/>
 						</div>
 						<div class="form-group col-lg-6">
 							<label>&nbsp;</label>
